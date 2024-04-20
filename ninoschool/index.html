@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nino</title>
+  <!-- Leaflet CSS -->
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+   <!-- Link to external CSS file -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="title">
+    <h1>ნინოს ავტოსკოლა !</h1>
+</div>
+    
+<!-- Buttons -->
+<div class="button-container">
+    
+    <!-- Add a start button --><button id="startNavigation" class="btn common-width">Start Navigation</button>
+
+    <audio id="audio100left" src="audio/100left.mp3" preload="auto"></audio>
+    <audio id="audioLeft" src="audio/left.mp3" preload="auto"></audio>
+
+    <audio id="audio100right" src="audio/100right.mp3"></audio>
+
+    <audio id="audioRight" src="audio/right.mp3" preload="auto"></audio>
+    <audio id="audioStart" src="audio/start.mp3" preload="auto"></audio>
+
+    <button class="btn common-width" onclick="changeRoute('N1')">Route N1</button>
+    <button class="btn common-width" onclick="changeRoute('N1')">Route N2</button> 
+    <p id="lat">lat=: 42</p>
+    <p id="long">long: 41</p>
+    <p > ___  </p>
+    <p id="dist">distance: 50m</p>
+    <p > ___  </p>
+    <p id="action">action : left</p>
+</div>
+
+
+<div id="map"></div>
+
+<!-- External JavaScript File -->
+<script src="script.js" defer></script>
+
+</body>
+</html>
